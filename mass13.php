@@ -12,4 +12,4 @@ abs(A[0] - numb) = blizh;
 for (int i = 1; i < N; i++){
 	if (abs(A[i] - numb) < blizh) blizh = A[i];
 }
-print("Ближайший элемент: " + blizh);
+print(" Ближайший элемент: " + blizh);

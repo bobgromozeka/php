@@ -38,7 +38,7 @@ var count = 0;
 var max = M1[0];
 var maxi = 0;
 for (i = 0; i < C - 1; i++){
-	for (j = 0; j < C; j++){
+	for ( j = 0; j < C; j++){
 		if (M1[j] > max) maxi = j;
 	}
 	p = M1[i];
