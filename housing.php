@@ -1,6 +1,7 @@
 <?php
 abstract class Housing
 {
+	public Id; // Номер жилья
 	public square; //площадь
 	public quality; //Состояние жилья(слабо пригодное, идеальное и т.д.)
 	public number_of_floors; //количество этажей
@@ -13,9 +14,10 @@ abstract class Housing
     
 	}
 
-	public function setRentTerm(term){  //установка срока сдачи жилья 
+	public function setRentTerm(term, Tenant_name){  //установка срока сдачи жилья 
 		this.rent_term = term;
-		return ...
+		Tenant_name.Housing_Id_Rented = this.Id;  // установка статуса арендованного жилья пользователю
+  		return ...
 	}
 
 	public function isBusy(rent_term){ //жилье считается занятым, если срок сдачи больше 0
@@ -53,5 +55,104 @@ class Room extends Housing
 	public floor; //этаж квартиры в которой комната
 	public function CountPrice(){ //подсчет цены комнаты
 		return this.square*this.price_per_sqr_meter;
+	}
+}
+
+abstract class User  // Абстрактный класс пользователь, от которого будут наследоваться классы Аредатор и Риелтор
+{
+	public login; // Логин пользователя
+	protected password; // Пароль пользователя
+	public email; // эл. почта пользователя
+	public tel_number; // номер телефона пользователя
+	public is_online;
+
+	public function getProfile(login){  // Чтение данных профайла
+
+	}
+
+	public function read(){ // Просмотр жилья
+		if (this.status == "banned"){
+			return ...
+		}
+		else{
+			...
+		}
+	}
+
+	public function comment(post){
+
+	}
+
+	public function editProfile(login){
+		if (!this.isEditAllowed(login)){
+			return ...
+		}
+	}
+
+	abstract protected function isEditAllowed(login);
+
+	public function login(login,password){
+
+	}
+
+	public function logout(){
+
+	}
+
+	public function register(data_array){
+
+	}
+}
+
+class Realtor extends User // Риелтор (Имеет полномочия администратора)
+{
+   protected function isEditAllowed(login){
+		return true;
+	}
+
+	public function AddUser(login,password...){
+
+	}
+
+	 public function DeleteUser(login){
+
+	}
+
+	public function setHousingRentTerm(Housing_name,term){ // Установка срока аренды жилья и статуса аренды для арендатора
+		Housing_name.setRentTerm(term, Tenant_name);
+	}
+
+}
+
+class Tenant extends User //Арендатор
+{
+	public Housing_Id_Rented;
+
+	protected function isEditAllowed(login){
+		if (this.login != login){
+			return false;
+		}
+		else{
+			return true;
+		}
+	}
+
+}
+
+class Guest // Незарегистрированный гость только с возможностью просмотра жилья
+{
+	public login;
+
+	public function read(){
+		if (this.status == "banned"){
+			return ...
+		}
+		else{
+			...
+		}
+	}
+
+	public function register(data_array){
+
 	}
 }
