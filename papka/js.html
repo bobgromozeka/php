@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MODERNIZR</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script src="modernizr-latest.js"></script>
+	</head>
+	<body>
+	<p id="canvas"> Canvas</p>
+	<p id="video"> Video
+	<ul>
+	<li id="webm">Webm</li>
+	<li id="flv">Flv</li>
+	<li id="avi">Avi</li>
+	</ul>
+	</p>
+	<p id="canvastext"> CanvasText</p>
+	<p id="audio"> Audio</p>
+	<p id="geolocation"> Geolocation</p>
+	<p id="canvastext"> CanvasText</p>
+	<p id="canvastext"> CanvasText</p>
+	<script type="text/javascript">
+	window.onload = function(){
+		if (Modernizr.canvas){
+			var canvas = document.getElementById('canvas');
+			canvas.setAttribute('style','color:green');
+		} 
+		else {
+			var canvas = document.getElementById('canvas');
+			canvas.setAttribute('style','color:red');
+		}
+		if (Modernizr.canvastext){
+			var canvastext = document.getElementById('canvastext');
+			canvastext.setAttribute('style','color:green');
+		} 
+		else {
+			var canvastext = document.getElementById('canvastext');
+			canvastext.setAttribute('style','color:red');
+		}
+			if (Modernizr.video){
+			var video = document.getElementById('video');
+			video.setAttribute('style','color:green');
+		} 
+		else {
+			var video = document.getElementById('video');
+			video.setAttribute('style','color:red');
+		}
+		if (Modernizr.geolocation){
+			var geolocation = document.getElementById('geolocation');
+			geolocation.setAttribute('style','color:green');
+		} 
+		else {
+			var geolocation = document.getElementById('geolocation');
+			geolocation.setAttribute('style','color:red');
+		}
+		if (Modernizr.audio){
+			var audio = document.getElementById('audio');
+			audio.setAttribute('style','color:green');
+		} 
+		else {
+			var audio = document.getElementById('audio');
+			audio.setAttribute('style','color:red');
+		}
+		if (Modernizr.video.webm){
+			var webm = document.getElementById('webm');
+			webm.setAttribute('style','color:green');
+		} 
+		else {
+			var webm = document.getElementById('webm');
+			webm.setAttribute('style','color:red');
+		}
+		if (Modernizr.video.flv){
+			var flv = document.getElementById('flv');
+			flv.setAttribute('style','color:green');
+		} 
+		else {
+			var flv = document.getElementById('flv');
+			flv.setAttribute('style','color:red');
+		}
+		if (Modernizr.video.avi){
+			var avi = document.getElementById('avi');
+			avi.setAttribute('style','color:green');
+		} 
+		else {
+			var avi = document.getElementById('avi');
+			avi.setAttribute('style','color:red');
+		}
+		}
+		</script>
+</body>
+</html>
