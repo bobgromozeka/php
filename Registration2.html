@@ -1,6 +1,66 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<style>
+			body{
+				background-color: pink;
+				color:red;
+			} 
+			h2 {
+				font-size: 33px;
+			}
+			ul{
+				color:green;
+			}
+			label.myclass{
+				color:blue;
+			}
+
+			label#login{
+				margin-right:40px;
+			}
+			label#password{
+				margin-right:13px;
+			}
+			label#name{
+				margin-right:35px; 
+			}
+			label#email{
+				margin-right: 29px;
+			}
+			label#country{
+				margin-right: 21px;
+			}
+			label#ciferka{
+				font-family: Arial;
+				margin-right: 5px;
+			}
+			a.bottom_link{
+				color:green;
+				font-family: Arial;
+			}
+			a.bottom_link:visited{
+				color:black;
+			}
+			a.lipsum{
+				color:aqua;
+			}
+			a.lipsum:visited{
+				color:darkred;
+			}
+			form #a1,#a2{
+				color:white;
+			}
+			#country{
+				width: 173px;
+				margin-left: 16px;
+			}
+			#country_label{
+				padding-right: 3px;
+			}
+
+
+		</style>
 		<title>Форма регистрации</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	</head>
@@ -20,19 +80,22 @@
 <li> 2222</li>
 <li> 3333</li>
 </ul>
-<a href="http://lipsum.com"> LIPSUM FOR U</a>
-<hr>
-	<form method="post" action="" align="left">
-		<label for="login">login</label><input name="login" type="text">
-		<p><label for="password">password</label><input name="password" type="password"></p>
-		<p><label for="name">Name</label><input name="name" type="text"></p>
-		<p><label for="email">E-mail</label><input name="email" type="email"></p>
-		<p><label for="country">Country</label><select name="country">
+<a class="lipsum" href="http://lipsum.com"> LIPSUM FOR U 1</a>
+<a class="lipsum" href="http://lipsum.com"> LIPSUM FOR U 2</a>
+<a class="lipsum" href="http://lipsum.com"> LIPSUM FOR U 3</a>
+<a class="lipsum" href="http://lipsum.com"> LIPSUM FOR U 4</a>
+<hr noshade>
+	<form method="post" action="" align="center" >
+		<label class="myclass" id="login" for="login">login</label><input name="login" type="text">
+		<p><label class="myclass" id="password" for="password">password</label><input name="password" type="password"></p>
+		<p><label class="myclass" id="name" for="name">Name</label><input name="name" type="text"></p>
+		<p><label class="myclass" id="email" for="email">E-mail</label><input name="email" type="email"></p>
+		<p><label id="country_label" for="country">Country</label><select id="country" name="country">
 		<option value="Ukraine">Украина
 		<option value="Russia">Россия
 		<option value="Belorussia">Белоруссия
 		</select></p>
-		<p><label for="country">CIFERKA</label><select name="ciferka" multiple size="3">
+		<p><label id="ciferka" for="country">CIFERKA</label><select name="ciferka" multiple size="3">
 		<option value="1">1
 		<option value="2">2
 		<option value="3">3
@@ -45,6 +108,9 @@
 		<p><label for="gender">Gender</label><input name="gender" type="radio">Male
 		<input name="gender" type="radio">Female</p>
 		<p><input type="submit"></p>
+		<a id="a1" class="bottom_link" href="http://google.ru">Гугл зачем-то</a>
+		<a id="a2" class="bottom_link" href="http://ya.ru">Yandex зачем-то</a>
+		<a id="a3" class="bottom_link" href="http://youtube.ru">Youtube зачем-то</a>
 	</form>
 </body>
 </html>
