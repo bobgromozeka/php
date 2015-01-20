@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+			body{
+				background-color: pink;
+				color:blue;
+			} 
+		 	
+			p{
+				margin-bottom: 25px;
+			}
+			label.myclass{
+				color:blue;
+			}
+
+			label#login{
+				margin-right:40px;
+			}
+			label#password{
+				margin-right:13px;
+			}
+			label#name{
+				margin-right:35px; 
+			}
+			label#email{
+				margin-right: 29px;
+			}
+			label#country{
+				margin-right: 21px;
+			}
+			label#ciferka{
+				margin-right: 85px;
+			}
+			a.bottom_link{
+				color:green;
+				font-family: Arial;
+			}
+			a.bottom_link:visited{
+				color:black;
+			}
+			a.lipsum{
+				color:aqua;
+			}
+			a.lipsum:visited{
+				color:darkred;
+			}
+			form #a1,#a2{
+				color:white;
+			}
+			#country{
+				width: 173px;
+				margin-left: 16px;
+			}
+			#country_label{
+				padding-right: 3px;
+			}
+			form{
+				background: lightpink;
+				width: 35%;
+				margin: 0 auto;
+				size: 100%;
+				padding-top: 10px;
+				padding-bottom: 4%;
+			}
+			
+		</style>
+</head>
+<body>
+<div id="main_text">
+<form method="post" action="" align="center">
+		<p><label class="myclass" id="login" for="login">login</label><input name="login" type="text"></p>
+		<p><label class="myclass" id="password" for="password">password</label><input name="password" type="password"></p>
+		<p><label class="myclass" id="name" for="name">Name</label><input name="name" type="text"></p>
+		<p><label class="myclass" id="email" for="email">E-mail</label><input name="email" type="email"></p>
+		<p><label id="country_label" for="country">Country</label><select id="country" name="country">
+		<option value="Ukraine">Украина</option>
+		<option value="Russia">Россия</option>
+		<option value="Belorussia">Белоруссия</option>1
+		</select></p>
+		<p><label id="ciferka" for="country">Выберите циферку</label><select name="ciferka" multiple size="3">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		</select></p>
+		<p><textarea rows=4 cols=25>О себе</textarea></p>
+		<p><input name="Terms" type="checkbox">Принимаю условия соглашения</p>
+		<p><label for="gender">Gender</label><input name="gender" type="radio">Male
+		<input name="gender" type="radio">Female</p>
+		<p><input type="submit"></p>
+		<a id="a1" class="bottom_link" href="http://google.ru">Гугл зачем-то</a>
+		<a id="a2" class="bottom_link" href="http://ya.ru">Yandex зачем-то</a>
+		<a id="a3" class="bottom_link" href="http://youtube.ru">Youtube зачем-то</a>
+	</form>
+	</div>
+	</body>
+</html>
