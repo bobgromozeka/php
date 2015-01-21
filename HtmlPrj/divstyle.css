@@ -7,15 +7,22 @@ body{
 	height: 50px;
 	background: rgb(150,255,255);
 	margin-bottom: 10px;
+	background-image: url(axe9.png);
+	background-repeat: repeat-x;
 }
 #main{
+	padding-left: 20px;
+	padding-top: 8px;
+	padding-right: 30px;
+}
+#not_so_main{
+	background-image: url(axe9.png);
+	background-repeat: no-repeat;
+	background-position: bottom right;
 	font-size: 20pt;
 	border: 4px;
 	border-style: double;
 	border-color: green;
-	padding-left: 20px;
-	padding-top: 8px;
-	padding-right: 30px;
 }
 .child{
 	margin: 10px;
@@ -28,6 +35,8 @@ body{
 	font-family: Times;
 	color: red;
 	font-size: 1.2em;
+	background-image: url(sun.jpg);
+	background-position: center;
 }
 #child2{
 	white-space: nowrap;
@@ -37,6 +46,9 @@ body{
 	font-family: arial;
 	color: blue;
 	font-size: 1.2em;
+	background-image: url(axe9.png);
+	background-repeat: no-repeat;
+	background-position: top;
 }
 #child3{
 	background: rgb(255,10,255);
@@ -44,4 +56,5 @@ body{
 	font-family: Times;
 	color: black;
 	font-size: 0.6em;
+	background-image: url(axe9.png);
 }
