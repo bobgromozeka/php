@@ -1,0 +1,47 @@
+body{
+	font-size: 14pt;
+	font-family: calibri;
+	color: aqua;
+}
+#header{
+	height: 50px;
+	background: rgb(150,255,255);
+	margin-bottom: 10px;
+}
+#main{
+	font-size: 20pt;
+	border: 4px;
+	border-style: double;
+	border-color: green;
+	padding-left: 20px;
+	padding-top: 8px;
+	padding-right: 30px;
+}
+.child{
+	margin: 10px;
+}
+#child1{
+	white-space: nowrap;
+	background: rgb(255,150,255);
+	width: 30%;
+	overflow: visible;
+	font-family: Times;
+	color: red;
+	font-size: 1.2em;
+}
+#child2{
+	white-space: nowrap;
+	background: rgb(255,70,255);
+	width: 50%;
+	overflow: hidden;
+	font-family: arial;
+	color: blue;
+	font-size: 1.2em;
+}
+#child3{
+	background: rgb(255,10,255);
+	width: 70%;
+	font-family: Times;
+	color: black;
+	font-size: 0.6em;
+}
