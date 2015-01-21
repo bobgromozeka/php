@@ -14,8 +14,12 @@
 	<li id="avi">Avi</li>
 	</ul>
 	</p>
+	<p id="audio">Audio
+	<ul>
+	<li id="mp3">MP3</li>
+	</ul>
+	</p>
 	<p id="canvastext"> CanvasText</p>
-	<p id="audio"> Audio</p>
 	<p id="geolocation"> Geolocation</p>
 	<p id="canvastext"> CanvasText</p>
 	<p id="canvastext"> CanvasText</p>
@@ -24,7 +28,7 @@
 		if (Modernizr.canvas){
 			var canvas = document.getElementById('canvas');
 			canvas.setAttribute('style','color:green');
-		} 
+		}
 		else {
 			var canvas = document.getElementById('canvas');
 			canvas.setAttribute('style','color:red');
@@ -84,6 +88,14 @@
 		else {
 			var avi = document.getElementById('avi');
 			avi.setAttribute('style','color:red');
+		}
+		if (Modernizr.audio.mp3){
+			var mp3 = document.getElementById('mp3');
+			mp3.setAttribute('style','color:green');
+		} 
+		else {
+			var mp3 = document.getElementById('mp3');
+			mp3.setAttribute('style','color:red');
 		}
 		}
 		</script>
