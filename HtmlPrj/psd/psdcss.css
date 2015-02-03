@@ -1,5 +1,9 @@
 body{
-	background-color: rgb(34,34,36);
+	background-color: #282828;
+	background-image: url(Lines.png);
+	background-repeat: no-repeat;
+	font-family: arial;
+	font-size: 11.4pt;
 }
 
 #header{
@@ -8,32 +12,165 @@ body{
 
 #logo{
 	float: left;
-	margin-left: 7%;
-	margin-top: 3%;
+	margin-left: 1%;
+	margin-top: 1%;
+
 }
 
 #top{
 	color: white;
 	float: left;
-	margin-left: 20%;
-	margin-right: 10%;
-	width: 25%;
+	margin: 0 auto;
+	margin-right: 3.7%;
+	width: 30%;
 }
 
 #a1{
 	margin-right: 3%;
 }
 
+#a3{
+	margin-left: 4%;
+	margin-right: 10%;
+}
+
+#a5{
+	margin-left: 3%;
+}
+
 #top_signin{
+	width: 8%;
+	color: #3C3831;
+	float: left;
+	margin-left: 14%;
+}
+
+#top_signin_top{
 	color: rgb(200,80,80);
 	float: left;
 	background-color: rgb(25,25,25);
-	padding-top: 0.75%;
-	padding-bottom: 0.75%;
-	padding-left: 1.1%;
-	padding-right: 1.1%;
-	margin-top: -0.5%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 2%;
+	width: 262px;
+	padding-right: 1%;
+	margin-top: -3%;
 	font-size: 11pt;
+}
+
+#top_signin_bot{
+	border: 1px solid;
+	border-radius: 7px;
+	background-color: rgb(54,54,56);
+	float: left;
+	width: 260px;
+	padding-top: 2%;
+	padding-right: 1%;
+	padding-left: 2%;
+}
+
+.menu_a{
+	text-decoration: none;
+	margin-right: 3%;
+}
+
+#menu{
+	width: 95%;
+	margin-top: 3.2%;
+	float: left;
+	margin-bottom: 2%;
+}
+
+#menu1{
+	margin-left: 8%;
+}
+
+#slider{
+	margin-bottom: 2%;
+	
+}
+
+#NewsLine{
+	
+	margin-bottom: 1.1%;
+}
+
+#news{
+	color: white;
+	margin: 0 auto;
+	
+	width: 967px;
+}
+
+#column1{
+	width: 40%;
+	float: left;
+}
+
+#column2{
+	width: 28%;
+	float: left;
+	margin-left: 1%;
+	border-left: 1px solid white;
+	border-right: 1px solid white;
+	padding-left: 2%;
+	padding-right: 1.5%;
+}
+
+#News1,#News2,#News3{
+	padding-left: 75px;
+	background-image: url(Date.png);
+	background-repeat: no-repeat;
+	float: left;
+	width: 100%;
+	margin-bottom: 2.5%;
+}
+
+.text1,.text2,.text3,.text4{
+	padding-right: 20%;
+	float: left;
+}
+
+
+.line{
+	float: left;
+}
+
+.text2{
+	font-size: 8pt;
+}
+
+.text3{
+	font-size: 10pt;
+}
+
+.text4{
+	background-image: url(dot.png);
+	background-repeat: no-repeat;
+	padding-left: 18px;
+	margin-top: 1%;
+	font-size: 8pt;
+}
+
+.text4 a{
+	color: rgb(176,68,68);
+}
+
+#News2{
+	float: left;
+}
+
+#News3{
+	float: left;
+}
+
+#categories p{
+	margin-top: 0.1%;
+	margin-bottom: 4%;
+}
+
+#categories a{
+	margin-left: 2%;
 }
 
 a{
