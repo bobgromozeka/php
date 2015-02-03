@@ -1,0 +1,41 @@
+body{
+	background-color: rgb(34,34,36);
+}
+
+#header{
+	width: 100%
+}
+
+#logo{
+	float: left;
+	margin-left: 7%;
+	margin-top: 3%;
+}
+
+#top{
+	color: white;
+	float: left;
+	margin-left: 20%;
+	margin-right: 10%;
+	width: 25%;
+}
+
+#a1{
+	margin-right: 3%;
+}
+
+#top_signin{
+	color: rgb(200,80,80);
+	float: left;
+	background-color: rgb(25,25,25);
+	padding-top: 0.75%;
+	padding-bottom: 0.75%;
+	padding-left: 1.1%;
+	padding-right: 1.1%;
+	margin-top: -0.5%;
+	font-size: 11pt;
+}
+
+a{
+	color: white;
+}
