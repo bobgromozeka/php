@@ -21,8 +21,10 @@ body{
 	color: white;
 	float: left;
 	margin: 0 auto;
-	margin-right: 3.7%;
+	padding-left: 10%;
+	margin-left: 5%;
 	width: 30%;
+
 }
 
 #a1{
@@ -42,7 +44,7 @@ body{
 	width: 8%;
 	color: #3C3831;
 	float: left;
-	margin-left: 14%;
+	margin-left: 10%;
 }
 
 #top_signin_top{
@@ -60,11 +62,12 @@ body{
 
 #top_signin_bot{
 	border: 1px solid;
-	border-radius: 7px;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
 	background-color: rgb(54,54,56);
 	float: left;
 	width: 260px;
-	padding-top: 2%;
+	padding-top: 10%;
 	padding-right: 1%;
 	padding-left: 2%;
 }
@@ -131,8 +134,21 @@ body{
 	float: left;
 }
 
+#navigation_left{
+	float: right;
+}
+
+#navigation_right{
+	float: right;
+	margin-left: 1%;
+}
 
 .line{
+	float: left;
+}
+
+.popular_lines{
+	margin-top: -3.5%;
 	float: left;
 }
 
@@ -173,6 +189,56 @@ body{
 	margin-left: 2%;
 }
 
+#categories span{
+	margin-left: 2%;
+}
+
+#popular{
+	margin-top: 10.5%;
+}
+
+#popular p{
+	font-size: 10pt;
+}
+
 a{
 	color: white;
+}
+
+#archive_news{
+	margin-top: 15%;
+}
+
+#archive_news p{
+	margin: 0 0;
+	margin-bottom: 1%;
+}
+
+#column3{
+	float: left;
+	width: 23%;
+	padding-left: 2%;
+	padding-right: 1.5%;
+}
+
+#march{
+	font-size: 10pt;
+	margin-top: 1.5%;
+}
+
+.change td{
+	background-color: rgb(54,59,63);
+	padding: 5px;
+	text-align: center; 
+	font-size: 10pt;
+}
+
+.head_td{
+	background-color: rgb(54,59,63);
+	padding: 5px;
+	text-align: center; 
+	font-size: 10pt;	
+}
+
+#main_td{
 }
