@@ -1,0 +1,38 @@
+#shadow{
+	background-color: orange;
+	width: 20%;
+	margin: 0 auto;
+	box-shadow: 10px 10px 10px 0 rgba(10,150,221,0.75);
+	margin-bottom: 3%;
+}
+
+#gradient{
+	margin: 0 auto;
+	background: linear-gradient(to top, rgb(100,120,140), rgb(170,170,140));
+	width: 20%;
+	margin-bottom: 3%;
+}
+
+#gradient1AndTransform{
+	margin: 0 auto;
+	background: radial-gradient(rgb(29,47,99), rgb(87,154,200));
+	width: 20%;
+	border-radius: 20px;
+	box-shadow: 15px 15px 15px 0 rgba(0,0,0,0.5);
+	transform: rotate(18deg);
+	margin-bottom: 6%;
+}
+
+#text-shadow{
+	width: 20%;
+	margin: 0 auto;
+	text-shadow: 15px 11px 2px rgba(34,114,0,0.5);
+	text-transform: uppercase;
+	margin-bottom: 4%;
+}
+
+#columns1{
+	width: 40%;
+	margin: 0 auto;
+	-webkit-columns: 4;
+}
