@@ -1,6 +1,6 @@
 body{
-	background-color: #282828;
-	background-image: url(Lines.png);
+	background-color: #212123;
+	background-image: url(background.png);
 	background-repeat: no-repeat;
 	font-family: arial;
 	font-size: 11.4pt;
@@ -8,6 +8,10 @@ body{
 
 #header{
 	width: 100%
+}
+
+#main{
+	width: 100%;
 }
 
 #logo{
@@ -20,9 +24,7 @@ body{
 #top{
 	color: white;
 	float: left;
-	margin: 0 auto;
-	padding-left: 10%;
-	margin-left: 5%;
+	margin-left: 35%;
 	width: 30%;
 
 }
@@ -44,7 +46,7 @@ body{
 	width: 8%;
 	color: #3C3831;
 	float: left;
-	margin-left: 10%;
+	margin-left: 1.3%;
 }
 
 #top_signin_top{
@@ -89,20 +91,21 @@ body{
 }
 
 #slider{
+	width: 72.5%;
+	margin: 0 auto;
 	margin-bottom: 2%;
-	
 }
 
 #NewsLine{
-	
+ 	width: 72.5%;
+ 	margin: 0 auto;	
 	margin-bottom: 1.1%;
 }
 
 #news{
 	color: white;
-	margin: 0 auto;
-	
-	width: 967px;
+	margin: 0 auto;	
+	width: 72.5%;
 }
 
 #column1{
@@ -124,14 +127,15 @@ body{
 	padding-left: 75px;
 	background-image: url(Date.png);
 	background-repeat: no-repeat;
-	float: left;
 	width: 100%;
+	float: left;
 	margin-bottom: 2.5%;
 }
 
+
 .text1,.text2,.text3,.text4{
 	padding-right: 20%;
-	float: left;
+	
 }
 
 #navigation_left{
@@ -170,14 +174,6 @@ body{
 
 .text4 a{
 	color: rgb(176,68,68);
-}
-
-#News2{
-	float: left;
-}
-
-#News3{
-	float: left;
 }
 
 #categories p{
@@ -227,14 +223,28 @@ a{
 }
 
 .change td{
-	background-color: rgb(54,59,63);
+	background-color: #373c40;
 	padding: 5px;
 	text-align: center; 
 	font-size: 10pt;
 }
 
+.change1 td{
+	background-color: #373c40;
+	text-align: center; 
+	font-size: 10pt;
+}
+
+#black{
+	background-color: #212123;
+}
+
+#red_td{
+	color: #ca9293;
+}
+
 .head_td{
-	background-color: rgb(54,59,63);
+	background-color: #212123;
 	padding: 5px;
 	text-align: center; 
 	font-size: 10pt;	
@@ -242,3 +252,40 @@ a{
 
 #main_td{
 }
+
+#advertising{
+	margin-top: 25%;
+}
+
+#foot_bg{
+	float: left;
+	background-image: url(foot_bg.png);
+	margin-top: 2%;
+	width: 95%;
+}
+
+#footer{
+	background-image: url(footer.png);
+	width: 100%;
+	margin-bottom: 2%;
+	margin: 0 auto;
+	float: left;
+}
+
+#away{
+	float: left;
+	margin-left: 70%;
+}
+
+#Rights_reserved{
+	margin-top: 0.5%;
+	margin-right: 0.5%;
+	color: white;
+	padding-left: 70%;
+	float: left;
+}
+
+#Rights_reserved p{
+	margin-top: 0.6%;
+}
+
