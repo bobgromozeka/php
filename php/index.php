@@ -199,7 +199,6 @@ echo "<br /><br /><br /><br /><br />";
 	 <p><label class="myclass">login</label><input name="login" type="text"></p>
 	 <p><label class="myclass">password</label><input name="password" type="password"></p>
 	 <p><input type="file" name="uploadfile">
-	 <input type="submit" value="Загрузить">
 	 <p><input type="submit" id="butt"></p>
 	 </form>
 	 <?php
