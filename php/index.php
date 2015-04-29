@@ -207,6 +207,12 @@ echo "<br /><br /><br /><br /><br />";
 	echo "<br /><br /><br />";
 	bfiles();
 	echo "<br /><br /><br />";
+	$string = "<b><i> Hello World!! </i></b>";
+	echo $string." - строка с тегами<br />";
+	$string1 = strip_tags($string);
+	echo $string1." - строка без тегов<br />";
+	$string2 = strip_tags($string, '<b>');
+	echo $string2." - строка только с тегом <\b>";
 	 ?>
 </body>
 </html>
